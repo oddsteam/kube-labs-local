@@ -1,0 +1,24 @@
+controller:
+  admin:
+    username: admin
+    password: admin1234
+  installPlugins:
+  - kubernetes:latest
+  - git:latest
+  - configuration-as-code:latest
+  - workflow-aggregator:latest
+  - credentials-binding:latest
+  - blueocean:latest
+  - matrix-auth:latest
+  - docker-workflow:latest
+  - docker-plugin:latest
+  - docker-build-publish:latest
+
+  resources:
+    requests:
+      cpu: "500m"
+      memory: "1Gi"
+    limits:
+      cpu: "1"
+      memory: "2Gi"
+  serviceType: ClusterIP
