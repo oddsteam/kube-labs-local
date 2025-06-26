@@ -32,7 +32,7 @@ jenkins-delete:
 	helm delete jenkins -n jenkins
 	kubectl delete -f jenkins/jenkins-ingress.yaml
 
-argo-cd:
+deploy-argo-cd:
 	kubectl create namespace argocd
 	kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
